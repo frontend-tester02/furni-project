@@ -1,3 +1,10 @@
+/* CUSTOM-PROPS */
+:root {
+  --button-color:#f9bf29;
+  --black:#2f2f2f;
+  --light-black:#6a6a6a;
+  --dark-green:#3b5d50;
+}
 /* GLOBAL STYLES */
 
 html {
@@ -19,10 +26,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   background-color: #fff;
-  color: #222;
+  color: var(--light-black);
 }
 
 img {
@@ -72,9 +79,9 @@ select:-webkit-autofill:focus {
 
 .container {
   width: 100%;
-  max-width: 1200;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
