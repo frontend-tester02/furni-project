@@ -28,7 +28,7 @@ body {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 28px;
   background-color: #eff2f1;
   color: var(--light-black);
   overflow-x: hidden;
@@ -368,6 +368,7 @@ select:-webkit-autofill:focus {
   margin-top: 0;
   margin-bottom: 24px;
   font-size: 32px;
+  line-height: 1.5;
   font-weight: 400;
   color: var(--black);
 }
@@ -568,4 +569,108 @@ select:-webkit-autofill:focus {
   width: 255px;
   height: 217px;
   object-fit: contain;
+}
+
+/* WE HELP SECTION */
+
+.help {
+  padding-top: 112px;
+  padding-bottom: 112px;
+
+}
+
+.help__container {
+  position: relative;
+  display: flex;
+}
+
+.help__products {
+  position: relative;
+  width: 100%;
+  max-width: 746px;
+}
+
+
+.help__grid-1 {
+  width: 497px;
+  height: 606px;
+  border-radius: 20px;
+}
+
+.help__grid--2 {
+  padding-left: 20px;
+}
+.help__grid-2 {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 229px;
+  height: 229px;
+  border-radius: 20px;
+}
+
+
+.help__grid-3 {
+  position: absolute;
+  bottom: -100px;
+  right: -20px;
+  border-radius: 20px;
+}
+
+.help__dots-img {
+  position: absolute;
+  top: -90px;
+  left: -85px;
+  z-index: -1;
+
+}
+
+
+.help__content {
+  width: 100%;
+  max-width: 550px;
+  padding-left: 60px;
+}
+
+.help__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.help__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.help__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.help__item {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 20px);
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+
+}
+
+.help__item::before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-green);
+  content: "";
 }
