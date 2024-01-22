@@ -755,3 +755,146 @@ select:-webkit-autofill:focus {
 .popular__item-link:hover {
   color: rgba(47, 47, 47, 0.5);
 }
+
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+  padding-top: 48px;
+  padding-bottom: 112px;
+  overflow: hidden;
+}
+
+.testimonials__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.testimonials__content {
+  padding-top: 30px;
+  width: 100%;
+  max-width: 855px;
+
+}
+
+.testimonials__content-none {
+  display: none;
+}
+
+.testimonials__content-active {
+  display: block;
+}
+
+.testimonials__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+
+}
+
+.testimonials__img {
+  margin-bottom: 20px;
+  width: 80px;
+  height: 77px;
+  border-radius: 50%;
+  object-fit: contain;
+
+}
+
+.testimonials__name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.testimonials__job-name {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+
+}
+
+.testimonials__control {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  width: 58px;
+  height: 58px;
+  background-color: rgba(59, 93, 80, 0.1);
+  border: 0;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.testimonials__control:hover {
+  background-color: var(--dark-green);
+}
+
+.testimonials__control__prev {
+  left: -30px;
+}
+.testimonials__control__next {
+  right: -30px;
+}
+
+.testimonials__control-inner {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.testimonials__control-icon {
+  width: 8.7px;
+  height: 13.6px;
+}
+
+
+.testimonials__tns-button {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 7px;
+  margin: 2px;
+  border: 0;
+  background-color: 0;
+  cursor: pointer;
+}
+
+
+
+.testimonials__tns-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  content: "";
+  transition: 0.3s all ease;
+}
+
+.testimonials__tns-button:hover::before {
+  background-color: var(--dark-green);
+}
