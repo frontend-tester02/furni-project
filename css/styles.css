@@ -945,6 +945,7 @@ select:-webkit-autofill:focus {
 
 .blog__item {
   padding: 0 12px;
+  cursor: pointer;
 }
 
 .blog__item:hover {
