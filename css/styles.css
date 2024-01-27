@@ -768,9 +768,9 @@ select:-webkit-autofill:focus {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .testimonials__title {
@@ -782,24 +782,19 @@ select:-webkit-autofill:focus {
   color: var(--black);
 }
 
+.testimonials__wrapper {
+  max-width: 1320px;
+}
+
 .testimonials__content {
   padding-top: 30px;
-  width: 100%;
-  max-width: 855px;
-
 }
-
-.testimonials__content-none {
-  display: none;
-}
-
-.testimonials__content-active {
-  display: block;
-}
-
 .testimonials__text {
   margin-top: 0;
   margin-bottom: 40px;
+  width: 845px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   line-height: 32px;
   text-align: center;
@@ -830,76 +825,42 @@ select:-webkit-autofill:focus {
 
 }
 
-.testimonials__control {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0;
+.testimonials__wrapper :is(.swiper-button-prev, .swiper-button-next) {
   width: 58px;
   height: 58px;
   background-color: rgba(59, 93, 80, 0.1);
-  border: 0;
-  border-color: transparent;
   border-radius: 50%;
-  cursor: pointer;
-
+  transition: background-color 0.3s;
 }
 
-.testimonials__control:hover {
+.testimonials__wrapper :is(.swiper-button-prev, .swiper-button-next):hover {
   background-color: var(--dark-green);
+  color: #fff !important;;
 }
 
-.testimonials__control__prev {
-  left: -30px;
-}
-.testimonials__control__next {
-  right: -30px;
-}
-
-.testimonials__control-inner {
-  display: flex;
-  justify-content: center;
-  align-items:center;
+.testimonials__wrapper :is(.swiper-button-prev, .swiper-button-next)::after {
+  font-size: 14px!important;
+  font-weight: 600!important;
+  color: var(--black)!important;
 }
 
-.testimonials__control-icon {
-  width: 8.7px;
-  height: 13.6px;
+.swiper-pagination {
+  position: static!important;
+
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--dark-green)!important;
 
-.testimonials__tns-button {
-  position: relative;
-  display: inline-block;
-  width: 0;
-  height: 7px;
-  margin: 2px;
-  border: 0;
-  background-color: 0;
-  cursor: pointer;
 }
 
-
-
-.testimonials__tns-button::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #d6d6d6;
-  content: "";
-  transition: 0.3s all ease;
-}
-
-.testimonials__tns-button:hover::before {
+.swiper-pagination .swiper-pagination-bullet:hover {
   background-color: var(--dark-green);
+
 }
 
 
+/* BLOG SECTION */
 .blog {
   padding-top: 112px;
   padding-bottom: 192px;
