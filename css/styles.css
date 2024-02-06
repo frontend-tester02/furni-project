@@ -381,12 +381,19 @@ select:-webkit-autofill:focus {
 
 .product-section__products {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.products-shop {
+  padding-bottom: 100px;
 }
 
 
 .products__items {
   padding: 0 12px;
+  width: 100%;
+  max-width: 306px;
 }
 
 .products__item {
