@@ -337,6 +337,11 @@ select:-webkit-autofill:focus {
   object-fit: contain;
 }
 
+
+.hero__img-about {
+  bottom:-230px;
+}
+
 .hero__img-dots {
   position: absolute;
   z-index: 5;
@@ -1163,4 +1168,81 @@ select:-webkit-autofill:focus {
 
 .site-footer__copyright-links a:not(:last-child) {
   margin-right: 24px;
+}
+
+/* ABOUT-US */
+
+/* OUR TEAM */
+
+.team {
+  padding: 112px 0;
+}
+
+.team__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: var(--black);
+  text-align: center;
+}
+.team__content {
+
+
+}
+
+.team__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 15px;
+
+}
+
+.team__img {
+  width: 306px;
+  height: 306px;
+  margin-bottom: 48px;
+  object-fit: contain;
+}
+
+.team__item-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 600;
+
+}
+.team__item-link {
+  display: block;
+  color: var(--black);
+
+}
+
+.team__item-link:hover {
+  text-decoration: none;
+}
+
+.team__member-position {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.team__item-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.team__link {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.team__link:hover {
+  text-decoration: none;
 }
