@@ -1,3 +1,5 @@
+
+// Site header links
 const siteNavLink = document.querySelectorAll('.sitenav__link');
 const siteNavItem = document.querySelectorAll('.sitenav__item');
 
@@ -23,6 +25,7 @@ siteNavLink.forEach((link) => {
 });
 
 
+// Testimonials
 const swiper = new Swiper('.swiper', {
   autoHeight: true,
   slidesPerView: 1,

@@ -947,3 +947,68 @@ select:-webkit-autofill:focus {
   font-weight: 600;
   text-decoration: none;
 }
+
+/* CTA SECTION */
+.cta {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.cta__container {
+  position: relative;
+  display: flex;
+}
+
+
+.cta__form-header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.cta__form-img {
+  display: flex;
+  margin-right: 10px;
+  width: 28px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.cta__form__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+.cta__form-input {
+  margin-top: 8px;
+  padding: 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #777;
+  margin-right: 15px;
+}
+
+
+.cta__form-btn {
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-color: var(--dark-green);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.cta__form-btn:hover {
+  opacity: 0.8;
+}
+
+.cta__form-btn:active {
+  opacity: 0.6;
+}
+
+.cta__img {
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
