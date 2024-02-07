@@ -346,6 +346,10 @@ select:-webkit-autofill:focus {
   bottom:-230px;
 }
 
+.hero__img-blog {
+  bottom: -230px;
+}
+
 .hero__img-dots {
   position: absolute;
   z-index: 5;
@@ -919,6 +923,7 @@ select:-webkit-autofill:focus {
 
 .blog__list {
   display: flex;
+  flex-wrap:wrap ;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -926,7 +931,13 @@ select:-webkit-autofill:focus {
 
 .blog__item {
   padding: 0 12px;
+  width: 100%;
+  max-width: 416px;
   cursor: pointer;
+}
+
+.blog__item:not(:last-child) {
+  margin-bottom: 48px;
 }
 
 .blog__item:hover {
