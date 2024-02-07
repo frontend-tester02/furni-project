@@ -342,6 +342,10 @@ select:-webkit-autofill:focus {
   bottom:-230px;
 }
 
+.hero__img-service {
+  bottom:-230px;
+}
+
 .hero__img-dots {
   position: absolute;
   z-index: 5;
@@ -504,6 +508,10 @@ select:-webkit-autofill:focus {
   padding: 0 12px;
   width: 100%;
   max-width: 660px;
+}
+
+.why-choose-us__content-0 {
+  max-width: none;
 }
 
 .why-choose-us__title {
