@@ -355,6 +355,10 @@ select:-webkit-autofill:focus {
   bottom: -230px ;
 }
 
+.hero__img-contact {
+  bottom: -230px;
+}
+
 .hero__img-dots {
   position: absolute;
   z-index: 5;
