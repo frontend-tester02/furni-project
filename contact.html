@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <title>Furni</title>
+</head>
+<body>
+  <!-- SITE-HEADER -->
+  <div class="site-header-hero">
+
+    <header class="site-header">
+      <div class="site-header__container container">
+        <a href="index.html" class="site-header__logo logo">
+          <h2 class="logo__name">Furni.</h2>
+        </a>
+
+        <!-- SITENAV -->
+        <nav class="site-header__sitenav sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item "><a href="index.html" class="sitenav__link ">Home</a></li>
+            <li class="sitenav__item"><a href="shopping.html" class="sitenav__link">Shop</a></li>
+            <li class="sitenav__item"><a href="about-us.html" class="sitenav__link">About us</a></li>
+            <li class="sitenav__item"><a href="services.html" class="sitenav__link">Services</a></li>
+            <li class="sitenav__item"><a href="blog.html" class="sitenav__link">Blog</a></li>
+            <li class="sitenav__item sitenav__item-active"><a href="contact.html" class="sitenav__link sitenav__link-active">About us</a></li>
+          </ul>
+        </nav>
+
+        <!-- USER-PROFILE -->
+        <div class="site-header__profile">
+          <img class="site-header__profile-img" src="img/user.svg" alt="User icon" width="18" height="20">
+        </div>
+
+        <!-- SHOPPING-CART -->
+        <div class="site-header__cart">
+          <a href="shopping-cart.html" class="site-header__cart-link">
+            <img class="site-header__cart-icon" src="img/cart.svg" alt="Cart icon" width="24" height="23">
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- HERO-SECTION -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Contact</h1>
+          <p class="hero__text">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+
+          <div class="hero__btns">
+            <a href="#" class="button primary-btn">Shop Now</a>
+            <a href="#" class="button main-btn">Explore</a>
+          </div>
+        </div>
+
+        <div class="hero__img-side">
+          <img class="hero__img" src="img/couch.png" alt="Hero img" width="780" height="560">
+          <img class="hero__img-dots" src="img/dots-light.svg" alt="Dots light img" width="255" height="217">
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="main-content">
+
+    <!-- Conatct us -->
+    <section class="contact">
+      <div class="container contact__container">
+        <div class="contact__inner">
+          <div class="contact__service">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <div class="contact__service-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact__service-content">
+                  <p class="contact__info">43 Raymouth Rd. Baltemoer, London 3910</p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contact__service-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact__service-content">
+                  <p class="contact__info">info@yourdomain.com</p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contact__service-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact__service-content">
+                  <p class="contact__info">+1 294 3925 3939</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="contact__form">
+            <form action="" class="contact__form-items form">
+              <div class="form__item-wrapper">
+                <div class="form__item form__control">
+                  <label for="firstname" class="form__label">First name</label>
+                  <input type="text" class="form__input" name="firstname" placeholder="Enter first name" required>
+                </div>
+                <div class="form__item form__control">
+                  <label for="lastname" class="form__label">Last name</label>
+                  <input type="text" class="form__input" name="lastname" placeholder="Enter last name" required>
+                </div>
+              </div>
+              <div class="form__item">
+                <label for="email" class="form__label">Email address</label>
+                <input type="email" class="form__input form__email" name="email" placeholder="Enter email address" required>
+                <div class="form__email-valid">Enter valid email</div>
+              </div>
+              <div class="form__item">
+                <label for="email" class="form__label">Message</label>
+                <textarea class="form__textarea" name="message" id="message" placeholder="Enter your message"></textarea>
+              </div>
+              <button type="submit" class="button secondary-btn contact__btn">Send Messege</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__container">
+        <div class="cta__form">
+          <h3 class="cta__form-header">
+            <span>
+              <img class="cta__form-img" src="img/messege-icon.svg" alt="Messege icon" width="28" height="27">
+            </span>
+            <span class="cta__form__title">Subscribe to Newsletter</span>
+          </h3>
+          <form action="" class="cta__form-part">
+              <input type="text" class="cta__form-input" name="name" placeholder="Enter your name" aria-label="Name">
+              <input type="email" class="cta__form-input" name="email" placeholder="Enter your email">
+              <button type="submit" class="cta__form-btn">Send</button>
+          </form>
+
+        </div>
+        <img class="cta__img" src="img/sofa.png" alt="Sofa image" width="380" height="329">
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="container site-footer__container">
+      <div class="site-footer__wrapper">
+        <div class="footer-section__content">
+          <a href="index.html" class="site-footer__logo logo">
+            <h2 class="logo__name">Furni.</h2>
+          </a>
+          <p class="footer-section__text">
+            Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+          </p>
+          <ul class="site-footer__socials">
+            <li class="site-footer__socials-item">
+              <a href="#" class="site-footer__socials-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="site-footer__socials-item">
+              <a href="#" class="site-footer__socials-link">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="site-footer__socials-item">
+              <a href="#" class="site-footer__socials-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="site-footer__socials-item">
+              <a href="#" class="site-footer__socials-link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__links">
+          <ul class="site-footer__list">
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">About Us</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Services</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Blog</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="site-footer__list">
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Support</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Knowledge base</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Live chat</a>
+            </li>
+          </ul>
+          <ul class="site-footer__list">
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Jobs</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Our tean</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Leadership</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Privacy Policy</a>
+            </li>
+          </ul>
+          <ul class="site-footer__list">
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Nordic Chair</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Kruzo Aero</a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#" class="site-footer__link">Ergonomic Chair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="site-footer__line">
+      <div class="site-footer__copyright">
+        <div class="site-footer__copyright-text">
+          <p>Copyright ©<span id="copyright-year">2024</span>. All Rights Reserved. — Designed with love by <a class="site-footer__copyright-link" href="https://untree.co">Untree.co</a> Distributed By <br> ThemeWagon</p>
+        </div>
+        <div class="site-footer__copyright-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
