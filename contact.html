@@ -76,7 +76,7 @@
   <main class="main-content">
 
     <!-- Conatct us -->
-    <section class="contact">
+    <div class="contact">
       <div class="container contact__container">
         <div class="contact__inner">
           <div class="contact__service">
@@ -108,24 +108,24 @@
             </ul>
           </div>
           <div class="contact__form">
-            <form action="" class="contact__form-items form">
+            <form action="https://echohtmlacdemy.ru" class="contact__form-items form">
               <div class="form__item-wrapper">
                 <div class="form__item form__control">
                   <label for="firstname" class="form__label">First name</label>
-                  <input type="text" class="form__input" name="firstname" placeholder="Enter first name" required>
+                  <input type="text" class="form__input" name="firstname" id="firstname" placeholder="Enter first name" required>
                 </div>
                 <div class="form__item form__control">
                   <label for="lastname" class="form__label">Last name</label>
-                  <input type="text" class="form__input" name="lastname" placeholder="Enter last name" required>
+                  <input type="text" class="form__input" name="lastname" id="lastname" placeholder="Enter last name" required>
                 </div>
               </div>
               <div class="form__item">
                 <label for="email" class="form__label">Email address</label>
-                <input type="email" class="form__input form__email" name="email" placeholder="Enter email address" required>
+                <input type="email" class="form__input form__email" name="email" id="email" placeholder="Enter email address" required>
                 <div class="form__email-valid">Enter valid email</div>
               </div>
               <div class="form__item">
-                <label for="email" class="form__label">Message</label>
+                <label for="message" class="form__label">Message</label>
                 <textarea class="form__textarea" name="message" id="message" placeholder="Enter your message"></textarea>
               </div>
               <button type="submit" class="button secondary-btn contact__btn">Send Messege</button>
@@ -134,7 +134,7 @@
         </div>
 
       </div>
-    </section>
+    </div>
 
 
 
