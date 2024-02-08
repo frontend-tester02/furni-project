@@ -25,12 +25,12 @@
         <!-- SITENAV -->
         <nav class="site-header__sitenav sitenav">
           <ul class="sitenav__list">
-            <li class="sitenav__item "><a href="index.html" class="sitenav__link ">Home</a></li>
+            <li class="sitenav__item"><a href="index.html" class="sitenav__link">Home</a></li>
             <li class="sitenav__item"><a href="shopping.html" class="sitenav__link">Shop</a></li>
             <li class="sitenav__item"><a href="about-us.html" class="sitenav__link">About us</a></li>
             <li class="sitenav__item"><a href="services.html" class="sitenav__link">Services</a></li>
             <li class="sitenav__item"><a href="blog.html" class="sitenav__link">Blog</a></li>
-            <li class="sitenav__item sitenav__item-active"><a href="contact.html" class="sitenav__link sitenav__link-active">About us</a></li>
+            <li class="sitenav__item"><a href="contact.html" class="sitenav__link">About us</a></li>
           </ul>
         </nav>
 
@@ -53,19 +53,7 @@
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content">
-          <h1 class="hero__title">Contact</h1>
-          <p class="hero__text">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-
-          <div class="hero__btns">
-            <a href="#" class="button primary-btn">Shop Now</a>
-            <a href="#" class="button main-btn">Explore</a>
-          </div>
-        </div>
-
-        <div class="hero__img-side">
-          <img class="hero__img hero__img-contact" src="img/couch.png" alt="Hero img" width="780" height="560">
-          <img class="hero__img-dots" src="img/dots-light.svg" alt="Dots light img" width="255" height="217">
-        </div>
+          <h1 class="hero__title">Cart</h1>
       </div>
     </section>
   </div>
@@ -75,68 +63,111 @@
 
   <main class="main-content">
 
-    <!-- Conatct us -->
-    <div class="contact">
-      <div class="container contact__container">
-        <div class="contact__inner">
-          <div class="contact__service">
-            <ul class="contact__list">
-              <li class="contact__item">
-                <div class="contact__service-icon">
-                  <i class="fa-solid fa-location-dot"></i>
+    <!-- CART SECTION -->
+    <section class="cart">
+      <div class="container cart__container">
+        <table class="cart__table">
+          <thead>
+            <tr class="cart__thead">
+              <th class="cart__thumbnail">Image</th>
+              <th class="cart__name">Product</th>
+              <th class="cart__price">Price</th>
+              <th class="cart__quantity">Quantity</th>
+              <th class="cart__total">Total</th>
+              <th class="cart__remove">Remove</th>
+            </tr>
+          </thead>
+
+          <tbody class="cart__body">
+            <tr class="cart__tbody">
+              <td class="cart__thumbnail">
+                <img class="cart__thumbnail-img" src="img/product-1.png" alt="Product image" width="160" height="160">
+              </td>
+              <td class="cart__name">
+                <h2 class="cart__name-product">Product 1</h2>
+              </td>
+              <td>$49.00</td>
+              <td>
+                <div class="cart__price-wrapper">
+                  <button type="button" class="cart__price-btn cart__price-btn--minus">-</button>
+                  <div class="cart__price-count">0</div>
+                  <button type="button" class="cart__price-btn cart__price-btn--plus">+</button>
                 </div>
-                <div class="contact__service-content">
-                  <p class="contact__info">43 Raymouth Rd. Baltemoer, London 3910</p>
+              </td>
+              <td class="cart__price-total">$49.00</td>
+              <td>
+                <button type="button" class="cart__remove-btn">X</button>
+              </td>
+            </tr>
+            <tr class="cart__tbody">
+              <td class="cart__thumbnail">
+                <img class="cart__thumbnail-img" src="img/product-2.png" alt="Product image" width="160" height="160">
+              </td>
+              <td class="cart__name">
+                <h2 class="cart__name-product">Product 1</h2>
+              </td>
+              <td>$49.00</td>
+              <td>
+                <div class="cart__price-wrapper">
+                  <button type="button" class="cart__price-btn cart__price-btn--minus">-</button>
+                  <div class="cart__price-count">0</div>
+                  <button type="button" class="cart__price-btn cart__price-btn--plus">+</button>
                 </div>
-              </li>
-              <li class="contact__item">
-                <div class="contact__service-icon">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="contact__service-content">
-                  <p class="contact__info">info@yourdomain.com</p>
-                </div>
-              </li>
-              <li class="contact__item">
-                <div class="contact__service-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="contact__service-content">
-                  <p class="contact__info">+1 294 3925 3939</p>
-                </div>
-              </li>
-            </ul>
+              </td>
+              <td class="cart__price-total">$49.00</td>
+              <td>
+                <button type="button" class="cart__remove-btn">X</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <div class="cart__contents">
+          <div class="cart__info">
+            <div class="cart__info-links">
+              <div class="cart__info-link cart__info-link--update">
+                <button type="button" class="button secondary-btn">Update Cart</button>
+              </div>
+              <div class="cart__info-link">
+                <a href="shopping.html" class="button secondary-btn">Continue Shopping</a>
+              </div>
+            </div>
+            <div class="cart__info-wrapper">
+              <h2 class="cart__info-title">Coupon</h2>
+              <p class="cart__info-text">Enter your coupon code if you have one.</p>
+            </div>
+
+            <div class="cart__info-form">
+              <form action="https://echohtmlacademy" method="POST">
+                <input type="text" class="cart__info-input" name="coupon-code" placeholder="Coupon code" aria-label="Coupon code">
+                <button class="button secondary-btn" type="button">Apply Coupon</button>
+              </form>
+            </div>
           </div>
-          <div class="contact__form">
-            <form action="https://echohtmlacdemy.ru" class="contact__form-items form">
-              <div class="form__item-wrapper">
-                <div class="form__item form__control">
-                  <label for="firstname" class="form__label">First name</label>
-                  <input type="text" class="form__input" name="firstname" id="firstname" placeholder="Enter first name" required>
-                </div>
-                <div class="form__item form__control">
-                  <label for="lastname" class="form__label">Last name</label>
-                  <input type="text" class="form__input" name="lastname" id="lastname" placeholder="Enter last name" required>
-                </div>
+
+          <div class="cart__price-info">
+            <div class="cart__price-head">
+              <h2 class="cart__price-info--title">Cart totals</h2>
+            </div>
+
+            <div class="cart__price-inner">
+              <div class="cart__price-info--total total-price">
+                <p class="total-price__title">Subtotal</p>
+                <strong class="total-price__price">$230.00</strong>
               </div>
-              <div class="form__item">
-                <label for="email" class="form__label">Email address</label>
-                <input type="email" class="form__input form__email" name="email" id="email" placeholder="Enter email address" required>
-                <div class="form__email-valid">Enter valid email</div>
+              <div class="cart__price-info--total total-price total-price-m">
+                <p class="total-price__title">Total</p>
+                <strong class="total-price__price">$230.00</strong>
               </div>
-              <div class="form__item">
-                <label for="message" class="form__label">Message</label>
-                <textarea class="form__textarea" name="message" id="message" placeholder="Enter your message"></textarea>
-              </div>
-              <button type="submit" class="button secondary-btn contact__btn">Send Messege</button>
-            </form>
+            </div>
+
+            <a href="#" class="button secondary-btn cart-checkout">Proceed To Checkout</a>
+
           </div>
         </div>
-
       </div>
-    </div>
-
-
+    </section>
 
     <!-- CTA -->
     <section class="cta">
