@@ -1469,6 +1469,10 @@ select:-webkit-autofill:focus {
   background-color: rgb(59, 93, 80, 0.3);
 }
 
+.cart__tbody--remove {
+  display: none;
+}
+
 .cart__thumbnail-img {
   width: 160px;
   height: 160px;
@@ -1501,6 +1505,7 @@ select:-webkit-autofill:focus {
   width: 60px;
   background-color: #fff;
   border: 1px solid #777;
+  text-align: center;
 }
 
 .cart__remove-btn {
@@ -1624,6 +1629,8 @@ form button {
   color: var(--black);
 }
 
+
+
 .cart-checkout {
   padding: 16px 30px;
   font-size: 20px;
@@ -1701,9 +1708,17 @@ form button {
   padding: 0 12px;
 }
 
+.form__checkbox-item {
+  cursor: pointer;
+}
+
 .form__checkbox-inner {
   display: none;
   padding: 8px 0;
+}
+
+.form__checkbox-inner--open {
+  display: block;
 }
 
 .form__checkbox-descr {
@@ -1713,12 +1728,13 @@ form button {
   color: var(--light-black);
 }
 
-.form__checkbox .form__item {
-  padding: 0;
-}
-
 .form__item-inner--checkbox {
   display: none;
+
+}
+
+.form__item-inner--open {
+  display: block;
 }
 
 .checkbox-account {
