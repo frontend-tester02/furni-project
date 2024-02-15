@@ -134,6 +134,10 @@ select:-webkit-autofill:focus {
   color:#fff;
 }
 
+.products__icon-btn {
+  border: 0;
+  cursor: pointer;
+}
 .contact__btn {
   margin-left: 12px;
   border: 0;
@@ -144,6 +148,8 @@ select:-webkit-autofill:focus {
   padding: 16px 30px;
 
 }
+
+
 /* MAIN-CONTENT */
 
 .main-content {
